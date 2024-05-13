@@ -17,6 +17,10 @@ module.exports = {
         TX9:"#1F2937",
         TX10:"#273242",
         TX11:"##ffffff0d",
+        b1:"#263B3E",
+        b2:"#273242",
+        b3:"#B22222",
+        b4:"#A4B5B8",
       },  
       backgroundImage:{
         bgl:"url('../img/cp-bg.png')",
