@@ -98,7 +98,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sayang": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch"
+    "pas": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch"
   },
   "keywords": [],
   "author": "",
