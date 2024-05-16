@@ -20,39 +20,29 @@
     <!-- navbar -->
     <header id="topHeader" class="fixed z-2 right-0 left-0 transition-all dark:bg-b1 bg-b4 w-full flex flex-row">
         <div class="flex justify-between items-center gap-10 py-6 w-4/5 m-auto flex-wrap">
+            <img src="assets/img2/1714360372884aehj5tnf-removebg-preview.png" class="md:h-32 h-20" alt="">
             <p class="text-3xl font-bold flex-[1.5] text-white ">Exclusive</p>
             <div class="md:hidden block" onclick="showHideMenu()">
-                <i class="bx bx-menu text-4xl"></i>
+                <i class="bx bx-menu text-3xl"></i>
             </div>
             <div id="menu"
                 class="hidden md:flex flex-col md:flex-row basis-auto grow justify-between items-start md:items-center gap-5 md:gap-0">
                 <nav>
                     <ul class="flex flex-col md:flex-row gap-8 capitalize py-">
-                        <li><a href="" class="text-lg font-bold text-grey-600  text-white">Home</a></li>
-                        <li><a href="" class="text-lg font-bold text-grey-600  text-white">Contact</a></li>
-                        <li><a href="" class="text-lg font-bold text-grey-600   text-white">About</a></li>
-                        <li><a href="" class="text-lg font-bold text-grey-600   text-white">Sign up</a></li>
+                        <li><a href="http://127.0.0.1:5501/home.html" class="text-lg font-bold text-grey-600 text-white hover:text-black">Home</a></li>
+                        <li><a href="" class="text-lg font-bold text-grey-600 text-white hover:text-black">Shop</a></li>
+                        <li><a href="" class="text-lg font-bold text-grey-600 text-white hover:text-black">About</a></li>
+                        <li><a href="" class="text-lg font-bold text-grey-600 text-white hover:text-black">Blogs</a></li>
                     </ul>
                 </nav>
-                <!-- <div class="bg-white rounded-xl" id="navbar">
-                    <input type="search" name="" id="" class="rounded-xl text-center text-sm text-black bg-white outline-white outline " placeholder="Search in here" >
-                </div> -->
-                <div class="w-[300px] p-4 bg-white rounded-md flex gap-4">
-                    <input type="text" class="border-none">
-                    <div class="">
-                        <i class="bx bx-search"></i>
-                    </div>
+                <div class="relative w-max mx-auto">
+                    <input type="search" name="search" placeholder="search here" id="search" class="relative peer z-10 w-10 h-10 rounded-full border focus:w-full
+                    focus:border-white text-center text-sm focus:cursor-text pl-12 pr-4 focus:pl-16 focus:pr-4">
                 </div>
-                <a href="">
-                    <img
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAnhJREFUWEftlztoVUEQhr8EtUgRBCMIapAYiSg2ioIighYSJCAEFCSVFr6xs/ARiCSQYKGgKGhhUklQFCwsEkgwhSAKaaKo4AMLH2iniKJiPD/MkfXm3nPO7jkxt8h09975Z787szuzW0OVWU2V8TALlFaR0gx1OYJvwCjwKC1Ikb+XAk2WCd4P7Cty0aRYWYCk3wMM/g+opJKtA9oM4j6weSaA3DUXAW+BWvtyDfB4uqHSjv0NYJdBXAKOzjTQFmDMID4D5wsG+goMAJ/iuGkZkp/KtLpgEDec2soGH6BDwOVpBHoTZWmZD1Ad8B6oN9FtYCIn4F6g0WL0Aid9gOR70dnQN4HdOYDmAx+BuRajCXjtC7QceGGiX8BS4EMg1GFAJ1b2ANjoxsmyqWP/EWCbfdDMOxMI9BBYb9qDwJVQoHbglomVncXAb0+olcBT03wHGgAd/b/mkyF1bHVudXCZ9pH2k4+djQCOm0CzUTPyH/MBkvA00G0R7kVNc6sHjf6QMrvQNK3R/hnKC7TAgs6xQM3Ay4xQO6K9c9d83wFLgCnXHd8MKd51J9VqmEcyArlzsQ84UU4XArQJ0HVE9iVqmOcyAp0C4syucNpIrj0Ui58AqzKClLpN6T2uQ0iGpNfpUOlCrCNJGwoUQ7V4EmkGxr2srDQPkCdLNvc8QGr5mtqvgGPAcIUltwMXAA1RvWAOJKGFAgnkmhP4efQq0VgoZ88At7R6Ugms0JK5HVuBfwLzKqzxw7lqyKUzOv49RQPpBTLu9JWrCaVQafcbgK4ua5MueKElU3xB7bSBW7EEBqIS63ZwJ+22mQco27Hx9JoFSktY1WXoD2FUXiVH8oH5AAAAAElFTkSuQmCC" />
-                </a>
-                <img src="dist/img2/cp-icon-user.png" alt="">
                 <button
-                    class="bg-f3 hover:ring hover:ring-sky-900 rounded-xl transition-all font-bold py-2 px-6 duration-200 shadow-md md:shadow-lg md:mt-0 mt-5 md:w-32 w-full md:bg-white bg-white">sign
+                    class="bg-f3 hover:ring hover:ring-sky-900 rounded-xl transition-all font-bold py-2 px-10 duration-200 shadow-md md:shadow-lg md:mt-0 mt-5 md:w-32 w-full md:bg-white bg-white">sign
             </div>
     </header>
-
     <!-- section 1 -->
     <section style="padding-top: 140px; padding-left: 40px;">
         <div >
@@ -63,7 +53,7 @@
             </p>
         </div>
         <div>
-            <p class="text-end" style="padding-right: 40px ;">
+            <p class="text-end" style="padding-right: 60px ;">
                 <span>Welcome !</span> 
                 <span class="text-red-400">Md rimel</span>
             </p>
@@ -77,54 +67,24 @@
 
         <script>
             var xstatus = false;
-            window.onscroll = function () { menu() };
-            function menu() {
-                if (document.documentElement.scrollTop > 20) {
-                    document.getElementById("topHeader").classList.add("bg-white");
-                    document.getElementById("topHeader").classList.remove("shadow-lg");
-                } else {
-                    if (!xstatus && document.documentElement.scrollTop < 20) {
-                        document.getElementById("topHeader").classList.remove("bg-white");
-                        document.getElementById("topHeader").classList.remove("shadow-lg");
-
-                    }
-                }
-            };
-
-            var xstatus = false;
             function showHideMenu() {
                 if (!xstatus) {
                     document.getElementById("menu").classList.remove("hidden");
                     document.getElementById("menu").classList.add("flex");
-                    document.getElementById("topHeader").classList.add("bg-white");
-                    if (document.documentElement.scrollTop < 20) {
-                        document.getElementById("topHeader").classList.add("bg-white");
+                    if (document.documentElement.scrollTop < 60) {
                         document.getElementById("topHeader").classList.add("shadow-lg");
                     }
                     xstatus = true;
                 } else {
                     document.getElementById("menu").classList.remove("flex");
                     document.getElementById("menu").classList.add("hidden");
-                    if (document.documentElement.scrollTop < 20) {
-                        document.getElementById("topHeader").classList.remove("bg-white");
+                    if (document.documentElement.scrollTop < 60) {
                         document.getElementById("topHeader").classList.remove("shadow-lg");
                     }
                     xstatus = false;
                 }
             }
 
-            // darkmode
-        function switchDark(){
-           const swicth = document.documentElement.classList.toggle('dark');
-           console.log(swicth)
-           if(swicth === true ) {
-            document.getElementById("iconDark").classList.add("bxs-ghost")
-            document.getElementById("iconDark"  ).classList.remove("bx-ghost")
-           } else {
-            document.getElementById("iconDark").classList.add("bx-ghost")
-            document.getElementById("iconDark").classList.remove("bxs-ghost")
-           }
-        }
 
         function navbar(){
             const navbar = document.getElementById("navbar");

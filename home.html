@@ -2,6 +2,7 @@
 
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,25 +16,34 @@
 
 
 </head>
-<body class="bg-TX01 dark:bg-TX9" data-aos-easing="ease-in-out" data-aos-duration="1000" >
+
+<body class="bg-TX01 dark:bg-TX9" data-aos-easing="ease-in-out" data-aos-duration="1000">
     <header id="topHeader" class="fixed top-0 z-20 right-0 left-0 transition-all   bg-white dark:bg-TX9">
         <div class="flex justify-between items-center gap-16 py-6 w-4/5 m-auto flex-wrap">
             <p class="text-3xl font-bold flex-[1.5] text-TX1">X$HOP</p>
             <div class="md:hidden block" onclick="showHideMenu()">
 
-              <i class="bx bx-menu text-4xl dark:text-white "></i>
+                <i class="bx bx-menu text-4xl dark:text-white "></i>
             </div>
             <div id="menu"
                 class="hidden md:flex flex-col md:flex-row basis-auto grow justify-between items-start md:items-center gap-5 md:gap-0">
-                <nav >
+                <nav>
                     <ul class="flex flex-col md:flex-row gap-8 capitalize py- ">
                         <li><a href="home.html" class="text-lg font-bold text-grey-600 dark:text-white">Home</a></li>
                         <li><a href="shop.html" class="text-lg font-bold text-grey-600 dark:text-white">Shop</a></li>
                         <li><a href="" class="text-lg font-bold text-grey-600 dark:text-white">About</a></li>
                         <li><a href="blogs.html" class="text-lg font-bold text-grey-600 dark:text-white">Blogs</a></li>
                         <li class="relative cursor-pointer group">
-                            <a href="" class="text-lg font-bold text-grey-600 flex items-center gap-[2px] dark:text-white">Quick links
-                                <span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" class="group-hover:rotate-180 duration-300 " height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"></path></svg></span>
+                            <a href=""
+                                class="text-lg font-bold text-grey-600 flex items-center gap-[2px] dark:text-white">Quick
+                                links
+                                <span><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                        viewBox="0 0 320 512" class="group-hover:rotate-180 duration-300 " height="1em"
+                                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z">
+                                        </path>
+                                    </svg></span>
                                 <div class="dropdown w-44 h-36 bg-gray-300 rounded-xl" onclick="toggleDropdown()">
                                     <ul class="px-2 py-4 gap-5">
                                         <li><a href="#" class="font-bold text-xl  gap-5">Trending home</a></li>
@@ -47,89 +57,95 @@
                     </ul>
                 </nav>
                 <a href="">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAnhJREFUWEftlztoVUEQhr8EtUgRBCMIapAYiSg2ioIighYSJCAEFCSVFr6xs/ARiCSQYKGgKGhhUklQFCwsEkgwhSAKaaKo4AMLH2iniKJiPD/MkfXm3nPO7jkxt8h09975Z787szuzW0OVWU2V8TALlFaR0gx1OYJvwCjwKC1Ikb+XAk2WCd4P7Cty0aRYWYCk3wMM/g+opJKtA9oM4j6weSaA3DUXAW+BWvtyDfB4uqHSjv0NYJdBXAKOzjTQFmDMID4D5wsG+goMAJ/iuGkZkp/KtLpgEDec2soGH6BDwOVpBHoTZWmZD1Ad8B6oN9FtYCIn4F6g0WL0Aid9gOR70dnQN4HdOYDmAx+BuRajCXjtC7QceGGiX8BS4EMg1GFAJ1b2ANjoxsmyqWP/EWCbfdDMOxMI9BBYb9qDwJVQoHbglomVncXAb0+olcBT03wHGgAd/b/mkyF1bHVudXCZ9pH2k4+djQCOm0CzUTPyH/MBkvA00G0R7kVNc6sHjf6QMrvQNK3R/hnKC7TAgs6xQM3Ay4xQO6K9c9d83wFLgCnXHd8MKd51J9VqmEcyArlzsQ84UU4XArQJ0HVE9iVqmOcyAp0C4syucNpIrj0Ui58AqzKClLpN6T2uQ0iGpNfpUOlCrCNJGwoUQ7V4EmkGxr2srDQPkCdLNvc8QGr5mtqvgGPAcIUltwMXAA1RvWAOJKGFAgnkmhP4efQq0VgoZ88At7R6Ugms0JK5HVuBfwLzKqzxw7lqyKUzOv49RQPpBTLu9JWrCaVQafcbgK4ua5MueKElU3xB7bSBW7EEBqIS63ZwJ+22mQco27Hx9JoFSktY1WXoD2FUXiVH8oH5AAAAAElFTkSuQmCC"/>
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAnhJREFUWEftlztoVUEQhr8EtUgRBCMIapAYiSg2ioIighYSJCAEFCSVFr6xs/ARiCSQYKGgKGhhUklQFCwsEkgwhSAKaaKo4AMLH2iniKJiPD/MkfXm3nPO7jkxt8h09975Z787szuzW0OVWU2V8TALlFaR0gx1OYJvwCjwKC1Ikb+XAk2WCd4P7Cty0aRYWYCk3wMM/g+opJKtA9oM4j6weSaA3DUXAW+BWvtyDfB4uqHSjv0NYJdBXAKOzjTQFmDMID4D5wsG+goMAJ/iuGkZkp/KtLpgEDec2soGH6BDwOVpBHoTZWmZD1Ad8B6oN9FtYCIn4F6g0WL0Aid9gOR70dnQN4HdOYDmAx+BuRajCXjtC7QceGGiX8BS4EMg1GFAJ1b2ANjoxsmyqWP/EWCbfdDMOxMI9BBYb9qDwJVQoHbglomVncXAb0+olcBT03wHGgAd/b/mkyF1bHVudXCZ9pH2k4+djQCOm0CzUTPyH/MBkvA00G0R7kVNc6sHjf6QMrvQNK3R/hnKC7TAgs6xQM3Ay4xQO6K9c9d83wFLgCnXHd8MKd51J9VqmEcyArlzsQ84UU4XArQJ0HVE9iVqmOcyAp0C4syucNpIrj0Ui58AqzKClLpN6T2uQ0iGpNfpUOlCrCNJGwoUQ7V4EmkGxr2srDQPkCdLNvc8QGr5mtqvgGPAcIUltwMXAA1RvWAOJKGFAgnkmhP4efQq0VgoZ88At7R6Ugms0JK5HVuBfwLzKqzxw7lqyKUzOv49RQPpBTLu9JWrCaVQafcbgK4ua5MueKElU3xB7bSBW7EEBqIS63ZwJ+22mQco27Hx9JoFSktY1WXoD2FUXiVH8oH5AAAAAElFTkSuQmCC" />
                 </a>
                 <img src="assets/img/profile-circle .png" alt="">
                 <button
                     class="md:bg-TX1 bg-f3 hover:ring hover:ring-sky-900 rounded-xl transition-all font-bold py-2 px-6 duration-200 shadow-md md:shadow-lg md:mt-0 mt-5 md:w-32 w-full">sign
-        </div>
-        <div class="p-1 rounded-full fixed bottom-4 left-4 z-2 bg-TX1 dark:bg-TX10 ring ring-gray-200" onclick="switcDark()">
-            <i id="iconDark" class="bx bxs-moon text-4xl text-TX7 dark:text-df2"></i>
-    
-            
+            </div>
+            <div class="p-1 rounded-full fixed bottom-4 left-4 z-2 bg-TX1 dark:bg-TX10 ring ring-gray-200"
+                onclick="switcDark()">
+                <i id="iconDark" class="bx bxs-moon text-4xl text-TX7 dark:text-df2"></i>
+
+
     </header>
-        <section id="jumbotron" class="bg-bgl dark:bg-bdg1 bg-cover min-h-screen w-full">
-            <div class="w-full md:w-[80%] h-[70%] bg-gray-300 md:ml-48 mt-20 md:mt-40 flex justify-center items-center flex-col rounded-xl dark:bg-TX10">
-                    <h4 class="text-center font-bold text-black mb-5 mt-6 text-xl dark:text-white" data-aos="zoom-in" data-aos-duration="1000">The beast</h4>
-                    <h4 class="text-center font-bold text-black mb-4 text-3xl md:text-5xl dark:text-white" data-aos="fade-up" data-aos-duration="1000">T-shirt</h4>
-                    <h1 class="text-center text-6xl md:text-9xl font-bold text-white dark:text-white" data-aos="zoom-in-right" data-aos-duration="1000">BRANDED</h1>
-                    <img src="assets/img/image 37.png" alt="" data-aos="zoom-in" data-aos-duration="1000">
-                    <button
-                    class="bg-TX1 w-36 h-10 rounded-2xl font-semibold mb-10 md:mb-28" data-aos="fade-up" data-aos-duration="1000">show in shop
-                    </button>
-                </div>
-        </section>
+    <section id="jumbotron" class="bg-bgl dark:bg-bdg1 bg-cover min-h-screen w-full">
+        <div
+            class="w-full md:w-[80%] h-[70%] bg-gray-300 md:ml-48 mt-20 md:mt-40 flex justify-center items-center flex-col rounded-xl dark:bg-TX10">
+            <h4 class="text-center font-bold text-black mb-5 mt-6 text-xl dark:text-white" data-aos="zoom-in"
+                data-aos-duration="1000">The beast</h4>
+            <h4 class="text-center font-bold text-black mb-4 text-3xl md:text-5xl dark:text-white" data-aos="fade-up"
+                data-aos-duration="1000">T-shirt</h4>
+            <h1 class="text-center text-6xl md:text-9xl font-bold text-white dark:text-white" data-aos="zoom-in-right"
+                data-aos-duration="1000">BRANDED</h1>
+            <img src="assets/img/image 37.png" alt="" data-aos="zoom-in" data-aos-duration="1000">
+            <button class="bg-TX1 w-36 h-10 rounded-2xl font-semibold mb-10 md:mb-28" data-aos="fade-up"
+                data-aos-duration="1000">show in shop
+            </button>
+        </div>
+    </section>
     </main>
     <section class="w-full h-full">
-      <div class="flex flex-col md:flex-row gap-4 md:gap-12 ml-4 md:ml-14 mt-4 md:mt-10">
-        <div class="h-[320px] md:w-80 w-full bg-black rounded-xl shadow-lg">
-          <img src="assets/img/image 35.png" alt="" class="mx-auto py-8">
-          <div class="text-center -mt-40 gap-8">
-            <p class="text-xl font-bold text-TX8">Use</p>
-            <p class="text-2xl font-semibold text-white">with</p>
-            <p class="text-4xl font-semibold text-TX5">T-shirt white</p>
-            <button class="bg-TX1 w-36 h-10 rounded-2xl font-semibold mt-4">Browse</button>
-          </div>
+        <div class="flex flex-col md:flex-row gap-4 md:gap-12 ml-4 md:ml-14 mt-4 md:mt-10">
+            <div class="h-[320px] md:w-80 w-full bg-black rounded-xl shadow-lg">
+                <img src="assets/img/image 35.png" alt="" class="mx-auto py-8">
+                <div class="text-center -mt-40 gap-8">
+                    <p class="text-xl font-bold text-TX8">Use</p>
+                    <p class="text-2xl font-semibold text-white">with</p>
+                    <p class="text-4xl font-semibold text-TX5">T-shirt white</p>
+                    <button class="bg-TX1 w-36 h-10 rounded-2xl font-semibold mt-4">Browse</button>
+                </div>
+            </div>
+            <div class="h-[320px] md:w-80 w-full bg-TX3 rounded-xl">
+                <img src="assets/img/image 40.png" alt="" class="mx-auto py-8">
+                <div class="text-center -mt-40 gap-8">
+                    <p class="text-xl font-bold text-TX8">Use</p>
+                    <p class="text-2xl font-semibold text-white">with</p>
+                    <p class="text-4xl font-semibold text-TX5">T-shirt Green</p>
+                    <button class="bg-TX1 w-36 h-10 rounded-2xl font-semibold mt-6">Browse</button>
+                </div>
+            </div>
+            <div class="h-[320px] md:w-1/2 w-full bg-TX4 rounded-xl">
+                <img src="assets/img/image 59.png" alt="" class="mx-auto py-8">
+                <div class="text-center -mt-40 gap-8">
+                    <p class="text-xl font-bold text-TX8">Use</p>
+                    <p class="text-2xl font-semibold text-white">with</p>
+                    <p class="text-4xl font-semibold text-TX5">T-shirt Blue</p>
+                    <button class="bg-white w-36 h-10 rounded-2xl font-semibold mt-4">Browse</button>
+                </div>
+            </div>
         </div>
-        <div class="h-[320px] md:w-80 w-full bg-TX3 rounded-xl">
-          <img src="assets/img/image 40.png" alt="" class="mx-auto py-8">
-          <div class="text-center -mt-40 gap-8">
-            <p class="text-xl font-bold text-TX8">Use</p>
-            <p class="text-2xl font-semibold text-white">with</p>
-            <p class="text-4xl font-semibold text-TX5">T-shirt Green</p>
-            <button class="bg-TX1 w-36 h-10 rounded-2xl font-semibold mt-6">Browse</button>
-          </div>
+        <div class="flex flex-col md:flex-row gap-12 ml-4 md:ml-14 mt-4 md:mt-10">
+            <div class="h-[320px] md:w-1/2 w-full bg-TX5 rounded-xl">
+                <img src="assets/img/image 82.png" alt="" class="mx-auto py-8">
+                <div class="text-center -mt-48 gap-8">
+                    <p class="text-xl font-bold text-gray-400">Use</p>
+                    <p class="text-2xl font-semibold text-white">with</p>
+                    <p class="text-4xl font-semibold text-gray-400">T-shirt Gray</p>
+                    <button class="bg-white w-36 h-10 rounded-2xl font-semibold mt-4">Browse</button>
+                </div>
+            </div>
+            <div class="h-[320px] md:w-80 w-full bg-TX6 rounded-xl">
+                <img src="assets/img/image 36 (1).png" alt="" class="mx-auto py-8">
+                <div class="text-center -mt-40 gap-8">
+                    <p class="text-xl font-bold text-TX8">Use</p>
+                    <p class="text-2xl font-semibold text-white">with</p>
+                    <p class="text-4xl font-semibold text-TX5">T-shirt Light blue</p>
+                    <button class="bg-TX1 w-36 h-10 rounded-2xl font-semibold mt-6">Browse</button>
+                </div>
+            </div>
+            <div class="h-[320px] md:w-80 w-full bg-TX7 rounded-xl">
+                <img src="assets/img/image 57.png" alt="" class="mx-auto py-8 ">
+                <div class="text-center -mt-40 gap-8">
+                    <p class="text-xl font-bold text-TX8">Use</p>
+                    <p class="text-2xl font-semibold text-white">with</p>
+                    <p class="text-4xl font-semibold text-TX5">T-shirt Black</p>
+                    <button class="bg-TX1 w-36 h-10 rounded-2xl font-semibold mt-4">Browse</button>
+                </div>
+            </div>
         </div>
-        <div class="h-[320px] md:w-1/2 w-full bg-TX4 rounded-xl">
-          <img src="assets/img/image 59.png" alt="" class="mx-auto py-8">
-          <div class="text-center -mt-40 gap-8">
-            <p class="text-xl font-bold text-TX8">Use</p>
-            <p class="text-2xl font-semibold text-white">with</p>
-            <p class="text-4xl font-semibold text-TX5">T-shirt Blue</p>
-            <button class="bg-white w-36 h-10 rounded-2xl font-semibold mt-4">Browse</button>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-col md:flex-row gap-12 ml-4 md:ml-14 mt-4 md:mt-10">
-        <div class="h-[320px] md:w-1/2 w-full bg-TX5 rounded-xl">
-          <img src="assets/img/image 82.png" alt="" class="mx-auto py-8">
-          <div class="text-center -mt-48 gap-8">
-            <p class="text-xl font-bold text-gray-400">Use</p>
-            <p class="text-2xl font-semibold text-white">with</p>
-            <p class="text-4xl font-semibold text-gray-400">T-shirt Gray</p>
-            <button class="bg-white w-36 h-10 rounded-2xl font-semibold mt-4">Browse</button>
-          </div>
-        </div>
-        <div class="h-[320px] md:w-80 w-full bg-TX6 rounded-xl">
-          <img src="assets/img/image 36 (1).png" alt="" class="mx-auto py-8">
-          <div class="text-center -mt-40 gap-8">
-            <p class="text-xl font-bold text-TX8">Use</p>
-            <p class="text-2xl font-semibold text-white">with</p>
-            <p class="text-4xl font-semibold text-TX5">T-shirt Light blue</p>
-            <button class="bg-TX1 w-36 h-10 rounded-2xl font-semibold mt-6">Browse</button>
-          </div>
-        </div>
-        <div class="h-[320px] md:w-80 w-full bg-TX7 rounded-xl">
-          <img src="assets/img/image 57.png" alt="" class="mx-auto py-8 ">
-          <div class="text-center -mt-40 gap-8">
-            <p class="text-xl font-bold text-TX8">Use</p>
-            <p class="text-2xl font-semibold text-white">with</p>
-            <p class="text-4xl font-semibold text-TX5">T-shirt Black</p>
-            <button class="bg-TX1 w-36 h-10 rounded-2xl font-semibold mt-4">Browse</button>
-          </div>
-        </div>
-      </div>
-  
+
     </section>
     <section class="w-full h-full">
         <div class="ml-12 sm:ml-52 mt-4 sm:mt-12 md:mr-36">
@@ -138,22 +154,31 @@
     </section>
     <section class="w-full h-full">
 
-        <div class="w-full md:w-[95rem] md:h-[400px] h-[550px] bg-TX1 rounded-xl ml-2 md:ml-24 mt-12">    
-            <div class="ml-4 md:ml-32 py-16">          
-                <p class="text-md md:text-lg font-semibold text-white" data-aos="fade-right" data-aos-duration="2000">30% OFF</p>
-                <h2 class="text-5xl md:text-4xl lg:text-6xl font-bold text-white" data-aos="zoom-in" data-aos-duration="3000">FINE SMILE</h2>
-                <h4 class="text-sm md:text-lg lg:text-xl font-semibold text-white" data-aos="fade-up" data-aos-duration="1000">10 Jan to 28 jan</h4>            
-            </div> 
+        <div class="w-full md:w-[95rem] md:h-[400px] h-[550px] bg-TX1 rounded-xl ml-2 md:ml-24 mt-12">
+            <div class="ml-4 md:ml-32 py-16">
+                <p class="text-md md:text-lg font-semibold text-white" data-aos="fade-right" data-aos-duration="2000">
+                    30% OFF</p>
+                <h2 class="text-5xl md:text-4xl lg:text-6xl font-bold text-white" data-aos="zoom-in"
+                    data-aos-duration="3000">FINE SMILE</h2>
+                <h4 class="text-sm md:text-lg lg:text-xl font-semibold text-white" data-aos="fade-up"
+                    data-aos-duration="1000">10 Jan to 28 jan</h4>
+            </div>
         </div>
-          
+
         <div class="ml-10 md:ml-20 lg:ml-[80rem] -mt-40 lg:-mt-56">
-            <p class="text-lg md:text-lg lg:text-xl font-semibold text-white" data-aos="fade-down" data-aos-duration="1000">30% OFF</p>
-            <h2 class="text-2xl md:text-3xl lg:text-5xl font-semibold text-white" data-aos="zoom-in" data-aos-duration="1000">FINE SMILE</h2>
-            <h4 class="text-lg md:text-lg lg:text-xl font-semibold text-white" data-aos="fade-left" data-aos-duration="2000">10 Jan to 28 jan</h4>
-            <button class="bg-white w-24 md:w-24 lg:w-36 h-8 md:h-8 lg:h-10 rounded-2xl font-semibold mt-2 md:mt-2 lg:mt-4" data-aos="fade-up" data-aos-duration="1000">Browse</button>
+            <p class="text-lg md:text-lg lg:text-xl font-semibold text-white" data-aos="fade-down"
+                data-aos-duration="1000">30% OFF</p>
+            <h2 class="text-2xl md:text-3xl lg:text-5xl font-semibold text-white" data-aos="zoom-in"
+                data-aos-duration="1000">FINE SMILE</h2>
+            <h4 class="text-lg md:text-lg lg:text-xl font-semibold text-white" data-aos="fade-left"
+                data-aos-duration="2000">10 Jan to 28 jan</h4>
+            <button
+                class="bg-white w-24 md:w-24 lg:w-36 h-8 md:h-8 lg:h-10 rounded-2xl font-semibold mt-2 md:mt-2 lg:mt-4"
+                data-aos="fade-up" data-aos-duration="1000">Browse</button>
         </div>
         <div class="ml-20 md:px-[7rem] lg:ml-[38rem] -mt-[25rem] lg:-mt-80">
-            <img src="assets/img/image 57 (1).png" alt="" class="w-full max-w-xs md:w- lg:w-[30rem]" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="assets/img/image 57 (1).png" alt="" class="w-full max-w-xs md:w- lg:w-[30rem]" data-aos="zoom-in"
+                data-aos-duration="1000">
         </div>
     </section>
     <section class="w-full h-full">
@@ -161,117 +186,127 @@
         <div id="content1" class="flex flex-wrap justify-center gap-40 md:mt-24 md:ml- ">
             <div class="w-60 md:w-80 h-48 md:h-60 bg-TX5 rounded-lg">
                 <div class="py-8 md:py-10 px-8 md:px-10">
-                <img src="assets/img/image 36 (1).png" alt="" class="h">
-                <div class="mt-8 md:mt-12">
-                <p class="text-xl md:text-2xl font-semibold dark:text-white">T-shirt light blue</p>
-                <p class="text-lg md:text-xl font-bold dark:text-white">Rp. 1.000.000</p>
-            </div>
+                    <img src="assets/img/image 36 (1).png" alt="" class="h">
+                    <div class="mt-8 md:mt-12">
+                        <p class="text-xl md:text-2xl font-semibold dark:text-white">T-shirt light blue</p>
+                        <p class="text-lg md:text-xl font-bold dark:text-white">Rp. 1.000.000</p>
+                    </div>
                 </div>
             </div>
             <div class="w-60 md:w-80 h-48 md:h-60 bg-TX5 rounded-lg">
                 <div class="-mt-8 md:-mt-10 px-8 md:px-10">
-                <img src="assets/img/image 42.png" alt="" class="h">
-                <div class="-mt-6 md:-mt-8">
-                    <p class="text-xl  md:text-2xl font-semibold dark:text-white">T-shirt light blue</p>
-                    <p class="text-lg md:text-xl font-bold dark:text-white">Rp. 1.000.000</p>
-                </div>
-                </div>
-            </div>
-            <div class="w-60 md:w-80 h-48 md:h-60 bg-TX5 rounded-lg">
-                <div class="py-4 md:py-6 px-8 md:px-11">
-                <img src="assets/img/image 59.png" alt="" class="h">
-                <div class="mt-1 md:mt-2">
-                    <p class="text-xl md:text-2xl font-semibold dark:text-white">T-shirt light blue</p>
-                    <p class="text-lg md:text-xl font-bold dark:text-white">Rp. 1.000.000</p>
-                </div>
-                </div>
-            </div>
-        <div id="content2" class="flex flex-wrap justify-center gap-40 mt-20 md:mt-5  m">
-            <div class="w-60 md:w-80 h-48 md:h-60 bg-TX5 rounded-lg">
-                <div class="py-4 md:py-6 px-12 md:px-16">
-                <img src="assets/img/image 58.png" alt="" class="h">
-                <div class="mt-2 md:mt-4">
-                    <p class="text-xl md:text-2xl font-semibold dark:text-white">T-shirt light blue</p>
-                    <p class="text-lg md:text-xl font-bold dark:text-white">Rp. 1.000.000</p>
-                </div>
-                
-                </div>
-                
-            </div>
-            <div class="w-60 md:w-80 h-48 md:h-60 bg-TX5 rounded-lg">
-                <div class="-mt-8 md:-mt-10 px-8 md:px-10">
-                <img src="assets/img/image 42.png" alt="" class="h">
-                
-                <div class="-mt-6 md:-mt-8">
-                    
-                    <p class="text-xl md:text-2xl font-semibold dark:text-white">T-shirt light blue</p>
-                    <p class="text-lg md:text-xl font-bold dark:text-white">Rp. 1.000.000</p>
-                </div>
+                    <img src="assets/img/image 42.png" alt="" class="h">
+                    <div class="-mt-6 md:-mt-8">
+                        <p class="text-xl  md:text-2xl font-semibold dark:text-white">T-shirt light blue</p>
+                        <p class="text-lg md:text-xl font-bold dark:text-white">Rp. 1.000.000</p>
+                    </div>
                 </div>
             </div>
             <div class="w-60 md:w-80 h-48 md:h-60 bg-TX5 rounded-lg">
                 <div class="py-4 md:py-6 px-8 md:px-11">
-                <img src="assets/img/image 59.png" alt="" class="h">
-                <div class="mt-1 md:mt-2">
-                    <p class="text-xl md:text-2xl font-semibold dark:text-white">T-shirt light blue</p>
-                    <p class="text-lg md:text-xl font-bold dark:text-white">Rp. 1.000.000</p>
-                </div>    
-              
+                    <img src="assets/img/image 59.png" alt="" class="h">
+                    <div class="mt-1 md:mt-2">
+                        <p class="text-xl md:text-2xl font-semibold dark:text-white">T-shirt light blue</p>
+                        <p class="text-lg md:text-xl font-bold dark:text-white">Rp. 1.000.000</p>
+                    </div>
                 </div>
             </div>
-           
+            <div id="content2" class="flex flex-wrap justify-center gap-40 mt-20 md:mt-5  m">
+                <div class="w-60 md:w-80 h-48 md:h-60 bg-TX5 rounded-lg">
+                    <div class="py-4 md:py-6 px-12 md:px-16">
+                        <img src="assets/img/image 58.png" alt="" class="h">
+                        <div class="mt-2 md:mt-4">
+                            <p class="text-xl md:text-2xl font-semibold dark:text-white">T-shirt light blue</p>
+                            <p class="text-lg md:text-xl font-bold dark:text-white">Rp. 1.000.000</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="w-60 md:w-80 h-48 md:h-60 bg-TX5 rounded-lg">
+                    <div class="-mt-8 md:-mt-10 px-8 md:px-10">
+                        <img src="assets/img/image 42.png" alt="" class="h">
+
+                        <div class="-mt-6 md:-mt-8">
+
+                            <p class="text-xl md:text-2xl font-semibold dark:text-white">T-shirt light blue</p>
+                            <p class="text-lg md:text-xl font-bold dark:text-white">Rp. 1.000.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-60 md:w-80 h-48 md:h-60 bg-TX5 rounded-lg">
+                    <div class="py-4 md:py-6 px-8 md:px-11">
+                        <img src="assets/img/image 59.png" alt="" class="h">
+                        <div class="mt-1 md:mt-2">
+                            <p class="text-xl md:text-2xl font-semibold dark:text-white">T-shirt light blue</p>
+                            <p class="text-lg md:text-xl font-bold dark:text-white">Rp. 1.000.000</p>
+                        </div>
+
+                    </div>
+                </div>
+
     </section>
-        <div class="w-full md:w-[95rem] h-[550px] bg-TX6 rounded-xl ml-2 md:ml-24 mt-28">    
-            <div class="ml-4 md:ml-32 py-16 md:mt-16">          
-                <p class="text-md md:text-lg font-semibold text-white" data-aos="fade-right" data-aos-duration="2000">30% OFF</p>
-                <h2 class="text-5xl md:text-4xl lg:text-6xl font-bold text-white" data-aos="zoom-in" data-aos-duration="3000">FINE SMILE</h2>
-                <h4 class="text-md md:text-xl font-semibold text-white" data-aos="fade-up" data-aos-duration="1000">10 Jan to 28 jan</h4>            
-            </div> 
+    <div class="w-full md:w-[95rem] h-[550px] bg-TX6 rounded-xl ml-2 md:ml-24 mt-28">
+        <div class="ml-4 md:ml-32 py-16 md:mt-16">
+            <p class="text-md md:text-lg font-semibold text-white" data-aos="fade-right" data-aos-duration="2000">30%
+                OFF</p>
+            <h2 class="text-5xl md:text-4xl lg:text-6xl font-bold text-white" data-aos="zoom-in"
+                data-aos-duration="3000">FINE SMILE</h2>
+            <h4 class="text-md md:text-xl font-semibold text-white" data-aos="fade-up" data-aos-duration="1000">10 Jan
+                to 28 jan</h4>
         </div>
-          
-        <div class="ml-10 md:ml-20 lg:ml-[80rem] -mt-40 lg:-mt-56">
-            <p class="text-md md:text-lg font-semibold text-white" data-aos="fade-down" data-aos-duration="1000">30% OFF</p>
-            <h2 class="text-2xl md:text-5xl font-semibold text-white" data-aos="zoom-in" data-aos-duration="1000">FINE SMILE</h2>
-            <h4 class="text-md md:text-xl font-semibold text-white" data-aos="fade-left" data-aos-duration="2000">10 Jan to 28 jan</h4>
-            <button class="bg-white w-24 md:w-36 h-8 md:h-10 rounded-2xl font-semibold mt-2 md:mt-4" data-aos="fade-up" data-aos-duration="1000">Browse</button>
-        </div>
-        <div class="ml-20 md:px-[35rem] md:mb-80 -mt-[22rem]" >
-            <img src="assets/img/image 50.png" alt="" class="w-[14rem] md:w-[28rem]" data-aos="zoom-in" data-aos-duration="1000">
-        </div>
-        </div>
+    </div>
+
+    <div class="ml-10 md:ml-20 lg:ml-[80rem] -mt-40 lg:-mt-56">
+        <p class="text-md md:text-lg font-semibold text-white" data-aos="fade-down" data-aos-duration="1000">30% OFF</p>
+        <h2 class="text-2xl md:text-5xl font-semibold text-white" data-aos="zoom-in" data-aos-duration="1000">FINE SMILE
+        </h2>
+        <h4 class="text-md md:text-xl font-semibold text-white" data-aos="fade-left" data-aos-duration="2000">10 Jan to
+            28 jan</h4>
+        <button class="bg-white w-24 md:w-36 h-8 md:h-10 rounded-2xl font-semibold mt-2 md:mt-4" data-aos="fade-up"
+            data-aos-duration="1000">Browse</button>
+    </div>
+    <div class="ml-20 md:px-[35rem] md:mb-80 -mt-[22rem]">
+        <img src="assets/img/image 50.png" alt="" class="w-[14rem] md:w-[28rem]" data-aos="zoom-in"
+            data-aos-duration="1000">
+    </div>
+    </div>
     </section>
     <section class="w-full h-full">
-            <div class="flex flex-wrap md:flex-nowrap ml-7 md:ml-52 gap-4 md:gap-16 mt-72 md:mt-14">
-                <div class="w-full md:w-auto gap-5">
+        <div class="flex flex-wrap md:flex-nowrap ml-7 md:ml-52 gap-4 md:gap-16 mt-72 md:mt-14">
+            <div class="w-full md:w-auto gap-5">
                 <img src="assets/img/image 84.png" alt="" data-aos="fade-up" data-aos-duration="3000">
                 <p class="text-xl md:text-2xl font-semibold mt-2 md:mt-4 dark:text-white">New clothes
                 </p>
-                <p class="text-sm md:text-base dark:text-white">And above are the newest clothes with very striking and nice </p>
+                <p class="text-sm md:text-base dark:text-white">And above are the newest clothes with very striking and
+                    nice </p>
                 <p class="text-sm md:text-base dark:text-white">look at the shop to see the newest clothes</p>
             </div>
-               <div class="w-full md:w-auto">
+            <div class="w-full md:w-auto">
                 <img src="assets/img/image 85.png" alt="" data-aos="fade-up" data-aos-duration="3000">
                 <p class="text-xl md:text-2xl font-semibold mt-2 md:mt-4 dark:text-white">New clothes
                 </p>
-                <p class="text-sm md:text-base dark:text-white">And above are the newest clothes with very striking and nice colors, </p>
+                <p class="text-sm md:text-base dark:text-white">And above are the newest clothes with very striking and
+                    nice colors, </p>
                 <p class="text-sm md:text-base dark:text-white">look at the shop to see the newest clothes</p>
             </div>
-               <div class="w-full md:w-auto">
+            <div class="w-full md:w-auto">
                 <img src="assets/img/image 86.png" alt="" data-aos="fade-up" data-aos-duration="3000">
                 <p class="text-xl md:text-2xl font-semibold mt-2 md:mt-4 dark:text-white">New clothes
                 </p>
-                <p class="text-sm md:text-base dark:text-white">And above are the newest clothes with very striking and nice colors, </p>
+                <p class="text-sm md:text-base dark:text-white">And above are the newest clothes with very striking and
+                    nice colors, </p>
                 <p class="text-sm md:text-base dark:text-white">look at the shop to see the newest clothes</p>
             </div>
-          
-            </div>
-            
+
+        </div>
+
         </div>
     </section>
     <section class="w-full h-full">
         <div class="ml-56 mt-20 ">
-        <img src="assets/img/payy3.png" alt="" data-aos="zoom-in" data-aos-duration="2000">
-     </div>
+            <img src="assets/img/payy3.png" alt="" data-aos="zoom-in" data-aos-duration="2000">
+        </div>
     </section>
     <footer class="flex flex-col w-full md:h-[50vh] h-[70vh] bg-black mt-20">
         <section class="flex justify-center items-center w-full h-5/6">
@@ -283,7 +318,7 @@
                     <div class="flex gap-4 justify-center">
                         <a href=""><img src="assets/img/cp-icon-fb.png" alt=""></a>
                         <a href=""><img src="assets/img/cp-icon-ig.png" alt=""></a>
-                     <a href="">   <img src="assets/img/cp-icon-twitter.png" alt=""></a>
+                        <a href=""> <img src="assets/img/cp-icon-twitter.png" alt=""></a>
                     </div>
                 </div>
                 <div class="md:w-3/5 w-full flex md:justify-evenly gap-5 md:p-0 p-8">
@@ -312,7 +347,7 @@
             <p class="text-slate-500 dark:text-white">Made With Loving By IDRISJR All Rttight Reserved</p>
         </section>
     </footer>
-    
+
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -321,7 +356,7 @@
     <script src="OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
     <script src="OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
     <script>
-     $(document).ready(function () {
+        $(document).ready(function () {
             var owl = $('.owl-carousel');
             owl.owlCarousel({
                 items: 4,
@@ -424,11 +459,12 @@
             }
         }
 
-        </script>
+    </script>
 
     </script>
 
 
 
 </body>
+
 </html>
