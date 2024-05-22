@@ -29,23 +29,23 @@
                 class="hidden md:flex flex-col md:flex-row basis-auto grow justify-between items-start md:items-center gap-5 md:gap-0">
                 <nav>
                     <ul class="flex flex-col md:flex-row gap-8 capitalize py-">
-                        <li><a href="http://127.0.0.1:5501/home.html" class="text-lg font-bold text-grey-600 text-white hover:text-black">Home</a></li>
+                        <li><a href="http://127.0.0.1:5501/home.html"
+                                class="text-lg font-bold text-grey-600 text-white hover:text-black">Home</a></li>
                         <li><a href="" class="text-lg font-bold text-grey-600 text-white hover:text-black">Shop</a></li>
-                        <li><a href="" class="text-lg font-bold text-grey-600 text-white hover:text-black">About</a></li>
-                        <li><a href="" class="text-lg font-bold text-grey-600 text-white hover:text-black">Blogs</a></li>
+                        <li><a href="" class="text-lg font-bold text-grey-600 text-white hover:text-black">About</a>
+                        </li>
+                        <li><a href="" class="text-lg font-bold text-grey-600 text-white hover:text-black">Blogs</a>
+                        </li>
                     </ul>
                 </nav>
                 <div class="relative w-max mx-auto">
-                    <input type="search" name="search" placeholder="search here" id="search" class="relative peer z-10 w-10 h-10 rounded-full border focus:w-full
-                    focus:border-white text-center text-sm focus:cursor-text pl-12 pr-4 focus:pl-16 focus:pr-4">
+                    <input type="search" name="search" placeholder="search here" id="search"
+                        class="rounded-xl text-sm py-2 px-4 text-center  ">
                 </div>
-                <button
-                    class="bg-f3 hover:ring hover:ring-sky-900 rounded-xl transition-all font-bold py-2 px-10 duration-200 shadow-md md:shadow-lg md:mt-0 mt-5 md:w-32 w-full md:bg-white bg-white">sign
-            </div>
     </header>
     <!-- section 1 -->
-    <section style="padding-top: 140px; padding-left: 40px;">
-        <div >
+    <section style="padding-top: 180px; padding-left: 40px;">
+        <div>
             <p>
                 <span class="hover:font-bold font-light"><button>home</button></span>
                 <span>/</span>
@@ -54,50 +54,108 @@
         </div>
         <div>
             <p class="text-end" style="padding-right: 60px ;">
-                <span>Welcome !</span> 
+                <span>Welcome !</span>
                 <span class="text-red-400">Md rimel</span>
             </p>
         </div>
+        <!-- text-left -->
+        <div class="flex gap-12">
+            <div class="w-1/3 ">
+                <div style="padding-top: 50px;">
+                    <p class="font-bold">Manage My Account</p>
+                </div>
+                <div style="padding-top: 20px; padding-left: 60px;">
+                    <p class="hover:text-red-400 text-slate-500 font-semibold"><button>My Profile</button></p>
+                </div>
+                <div style="padding-top: 10px; padding-left: 60px;">
+                    <p class=" hover:text-red-400 font-semibold text-slate-500"><button>Address Book</button></p>
+                </div>
+                <div style="padding-top: 10px; padding-left: 60px;">
+                    <p class="hover:text-red-400 text-slate-500 font-semibold"><button>My Payment Options</button></p>
+                </div>
+            </div>
+            <!-- border -->
+            <div class="w-2/3" style="padding-top: 50px;">
+                <div class=" border-white w-4/5 h-4/5 bg-white rounded-xl">
+                    <p style="padding-top: 50px; padding-left: 50px; padding-right: 600px; padding-bottom: 400px;"
+                        class=" flex flex-col">
+                        <span class="text-red-400 font-bold"> Edit Your Profile </span>
+                        <span class="font-semibold" style="padding-top: 15px; padding-bottom: 15px;">First name</span>
+                        <input type="text" placeholder="Md" class=" text-center text-black bg-slate-200 rounded-lg">
+                        <span class="font-semibold" style="padding-top: 15px; ">Email</span>
+                        <input type="email" placeholder="Md" class=" text-center text-black bg-slate-200 rounded-lg">
+
+
+                        <span style="padding-top: 70px; padding-bottom: 10px;" class="font-semibold ">Password
+                            Changes</span>
+                        <input type="text" placeholder="Md"
+                            class="w-full text-center text-black bg-slate-200 rounded-lg" />
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
     </section>
+
+    
 
     <!-- javascript -->
     <div class="p-1 rounded-full fixed bottom-4 left-4 z-2 bg-df2 dark:bg-white ring bg-white" onclick="switchDark()">
         <i id="iconDark" class="bx bxs-ghost text-4xl text-b1"></i>
     </div>
 
-        <script>
-            var xstatus = false;
-            function showHideMenu() {
-                if (!xstatus) {
-                    document.getElementById("menu").classList.remove("hidden");
-                    document.getElementById("menu").classList.add("flex");
-                    if (document.documentElement.scrollTop < 60) {
-                        document.getElementById("topHeader").classList.add("shadow-lg");
-                    }
-                    xstatus = true;
-                } else {
-                    document.getElementById("menu").classList.remove("flex");
-                    document.getElementById("menu").classList.add("hidden");
-                    if (document.documentElement.scrollTop < 60) {
-                        document.getElementById("topHeader").classList.remove("shadow-lg");
-                    }
-                    xstatus = false;
+    <script>
+
+        // pop up
+        document.getElementById("openPopup").addEventListener("click", function () { document.getElementById("popup").style.display = "block"; }); document.getElementById("closePopup").addEventListener("click", function () { document.getElementById("popup").style.display = "none"; });
+
+
+        var xstatus = false;
+        function showHideMenu() {
+            if (!xstatus) {
+                document.getElementById("menu").classList.remove("hidden");
+                document.getElementById("menu").classList.add("flex");
+                if (document.documentElement.scrollTop < 60) {
+                    document.getElementById("topHeader").classList.add("shadow-lg");
                 }
+                xstatus = true;
+            } else {
+                document.getElementById("menu").classList.remove("flex");
+                document.getElementById("menu").classList.add("hidden");
+                if (document.documentElement.scrollTop < 60) {
+                    document.getElementById("topHeader").classList.remove("shadow-lg");
+                }
+                xstatus = false;
             }
+        }
 
 
-        function navbar(){
+        function navbar() {
             const navbar = document.getElementById("navbar");
             console.log(navbar)
-            if(navbar === true){
+            if (navbar === true) {
                 document.getElementById("navbar").classList.add("search.png")
             }
-            else{
+            else {
                 document.getElementById("navbar").classList.remove("search.png")
             }
         }
 
-    </script> 
+
+        function switchDark() {
+            const swicth = document.documentElement.classList.toggle('dark');
+            console.log(swicth)
+            if (swicth === true) {
+                document.getElementById("iconDark").classList.add("bxs-ghost")
+                document.getElementById("iconDark").classList.remove("bx-ghost")
+            } else {
+                document.getElementById("iconDark").classList.add("bx-ghost")
+                document.getElementById("iconDark").classList.remove("bxs-ghost")
+            }
+        }
+    </script>
 </body>
 
 </html>
