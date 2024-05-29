@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account</title>
+    <title style="background-image: url(assets/img2/1714360372884aehj5tnf-removebg-preview.png);">Account</title>
     <link rel="stylesheet" href="assets/css/output.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css">
@@ -30,11 +30,16 @@
                 <nav>
                     <ul class="flex flex-col md:flex-row gap-8 capitalize py-">
                         <li><a href="http://127.0.0.1:5501/home.html"
-                                class="text-lg font-bold text-grey-600 text-white hover:text-black">Home</a></li>
-                        <li><a href="" class="text-lg font-bold text-grey-600 text-white hover:text-black">Shop</a></li>
-                        <li><a href="" class="text-lg font-bold text-grey-600 text-white hover:text-black">About</a>
+                                class="text-lg font-bold text-grey-600 text-white hover:text-black hover:font-semibold">Home</a>
                         </li>
-                        <li><a href="" class="text-lg font-bold text-grey-600 text-white hover:text-black">Blogs</a>
+                        <li><a href=""
+                                class="text-lg font-bold text-grey-600 text-white hover:text-black hover:font-semibold">Shop</a>
+                        </li>
+                        <li><a href=""
+                                class="text-lg font-bold text-grey-600 text-white hover:text-black hover:font-semibold">About</a>
+                        </li>
+                        <li><a href=""
+                                class="text-lg font-bold text-grey-600 text-white hover:text-black hover:font-semibold">Blogs</a>
                         </li>
                     </ul>
                 </nav>
@@ -43,63 +48,122 @@
                         class="rounded-xl text-sm py-2 px-4 text-center  ">
                 </div>
     </header>
+    <!-- navbar -->
     <!-- section 1 -->
-    <section style="padding-top: 180px; padding-left: 40px;">
-        <div>
-            <p>
-                <span class="hover:font-bold font-light"><button>home</button></span>
-                <span>/</span>
-                <span class="hover:font-bold font-light"><button>My Account</button></span>
-            </p>
-        </div>
-        <div>
-            <p class="text-end" style="padding-right: 60px ;">
-                <span>Welcome !</span>
-                <span class="text-red-400">Md rimel</span>
-            </p>
-        </div>
-        <!-- text-left -->
-        <div class="flex gap-12">
-            <div class="w-1/3 ">
-                <div style="padding-top: 50px;">
-                    <p class="font-bold">Manage My Account</p>
-                </div>
-                <div style="padding-top: 20px; padding-left: 60px;">
-                    <p class="hover:text-red-400 text-slate-500 font-semibold"><button>My Profile</button></p>
-                </div>
-                <div style="padding-top: 10px; padding-left: 60px;">
-                    <p class=" hover:text-red-400 font-semibold text-slate-500"><button>Address Book</button></p>
-                </div>
-                <div style="padding-top: 10px; padding-left: 60px;">
-                    <p class="hover:text-red-400 text-slate-500 font-semibold"><button>My Payment Options</button></p>
-                </div>
+    <section class="pt-20 pb-10" style="padding-top: 200px;">
+        <div class="container mx-auto p-4">
+            <div class="flex">
+                <p>
+                    <span class="hover:font-semibold dark:text-white"><button>Home</button></span>
+                    <span class=" dark:text-white">/</span>
+                    <span class="hover:font-semibold  dark:text-white"><button>My account</button></span>
+                </p>
+                <p class="text-center" style="padding-left: 1200px;">
+                    <span class="text-black dark:text-white">welcome! <span class="text-red-400">md rimel</span></span>
+                </p>
             </div>
-            <!-- border -->
-            <div class="w-2/3" style="padding-top: 50px;">
-                <div class=" border-white w-4/5 h-4/5 bg-white rounded-xl">
-                    <p style="padding-top: 50px; padding-left: 50px; padding-right: 600px; padding-bottom: 400px;"
-                        class=" flex flex-col">
-                        <span class="text-red-400 font-bold"> Edit Your Profile </span>
-                        <span class="font-semibold" style="padding-top: 15px; padding-bottom: 15px;">First name</span>
-                        <input type="text" placeholder="Md" class=" text-center text-black bg-slate-200 rounded-lg">
-                        <span class="font-semibold" style="padding-top: 15px; ">Email</span>
-                        <input type="email" placeholder="Md" class=" text-center text-black bg-slate-200 rounded-lg">
-
-
-                        <span style="padding-top: 70px; padding-bottom: 10px;" class="font-semibold ">Password
-                            Changes</span>
-                        <input type="text" placeholder="Md"
-                            class="w-full text-center text-black bg-slate-200 rounded-lg" />
+            <div class="flex">
+                <div class="w-1/3">
+                    <p class="py-16 flex flex-col">
+                        <span class="font-bold text-xl dark:text-white">Manage my account</span>
+                        <span class="font-semibold pt-10"><button
+                                class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">My
+                                Profile </button></span>
+                        <span class="font-semibold pt-5"><button
+                                class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">Address
+                                Book</button></span>
+                        <span class="font-semibold pt-5"><button
+                                class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">My
+                                Payment Options</button></span>
                     </p>
-
+                </div>
+                <div class="w-2/3">
+                    <main class="px-4 py-16">
+                        <section class="mb-16">
+                            <h2 class="text-4xl font-bold mb-4 dark:text-white">My Account</h2>
+                            <div class="bg-white p-8 shadow rounded">
+                                <form>
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div>
+                                            <label for="first_name" class="block text-lg font-bold mb-2">First
+                                                Name</label>
+                                            <input type="text" id="first_name" name="first_name" value="Md"
+                                                class="w-full border p-2">
+                                        </div>
+                                        <div>
+                                            <label for="last_name" class="block text-lg font-bold mb-2">Last
+                                                Name</label>
+                                            <input type="text" id="last_name" name="last_name" value="Rimel"
+                                                class="w-full border p-2">
+                                        </div>
+                                    </div>
+                                    <div class="mt-4">
+                                        <label for="email" class="block text-lg font-bold mb-2">Email</label>
+                                        <input type="email" id="email" name="email" value="rimell@gmail.com"
+                                            class="w-full border p-2">
+                                    </div>
+                                    <div class="mt-4">
+                                        <label for="address" class="block text-lg font-bold mb-2">Address</label>
+                                        <input type="text" id="address" name="address"
+                                            value="Kingston, 5236, United State" class="w-full border p-2">
+                                    </div>
+                                    <div class="mt-4 grid grid-cols-2 gap-4">
+                                        <div>
+                                            <label for="current_password" class="block text-lg font-bold mb-2">Current
+                                                Password</label>
+                                            <input type="password" id="current_password" name="current_password"
+                                                class="w-full border p-2">
+                                        </div>
+                                        <div>
+                                            <label for="new_password" class="block text-lg font-bold mb-2">Confirm
+                                                Password</label>
+                                            <input type="password" id="new_password" name="new_password"
+                                                class="w-full border p-2">
+                                        </div>
+                                    </div>
+                                    <div class="mt-4">
+                                        <label for="confirm_new_password" class="block text-lg font-bold mb-2">New
+                                            Password</label>
+                                        <input type="password" id="confirm_new_password" name="confirm_new_password"
+                                            class="w-full border p-2">
+                                    </div>
+                                    <div class="mt-8 text-center">
+                                        <button type="submit"
+                                            class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">Cancel</button>
+                                        <button type="submit"
+                                            class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Save
+                                            Changes</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </section>
+                    </main>
                 </div>
             </div>
         </div>
-
-
     </section>
-
-    
+    <!-- footer -->
+        <div class="bg-black rounded-t-3xl flex flex-row" style="padding-top: 100px; padding-bottom: 80px;">
+            <div>
+                <p class="text-white flex flex-col" style="padding-left: 70px;">
+                    <span class="text-start items-start text-3xl font-semibold" style="">Exclusive</span>
+                    <span class="text-start items-start text-xl font-semibold" style=" padding-top: 15px;">Subscribe</span>
+                    <span class="text-start items-start text-lg font-light" style=" padding-top: 15px;">Get 10% off your first order</span>
+                </p>
+            </div>
+            <div>
+                <p class="text-white flex flex-col" style="padding-left: 70px;">
+                    <span class="text-start items-start text-3xl font-semibold" style="">Support</span>
+                    <span class="text-start items-start text-xl font-light" style=" padding-top: 15px;">111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.</span>
+                    <span class="text-start items-start text-lg font-light" style=" padding-top: 15px;">exclusive@gmail.com</span>
+                    <span class="text-start items-start text-lg font-light" style=" padding-top: 15px;">+88015-88888-9999</span>
+                </p>
+            </div>
+        
+        </div>
+        <section class="bg-black flex text-center justify-center " style="padding-bottom: 50px;">
+            <p class="text-slate-500 dark:text-white">Made With Loving By IDRISJR All Rttight Reserved</p>
+        </section>
 
     <!-- javascript -->
     <div class="p-1 rounded-full fixed bottom-4 left-4 z-2 bg-df2 dark:bg-white ring bg-white" onclick="switchDark()">
@@ -107,12 +171,17 @@
     </div>
 
     <script>
-
         // pop up
-        document.getElementById("openPopup").addEventListener("click", function () { document.getElementById("popup").style.display = "block"; }); document.getElementById("closePopup").addEventListener("click", function () { document.getElementById("popup").style.display = "none"; });
+        document.getElementById("openPopup").addEventListener("click", function () {
+            document.getElementById("popup").style.display = "block";
+        });
 
+        document.getElementById("closePopup").addEventListener("click", function () {
+            document.getElementById("popup").style.display = "none";
+        });
 
         var xstatus = false;
+
         function showHideMenu() {
             if (!xstatus) {
                 document.getElementById("menu").classList.remove("hidden");
@@ -131,31 +200,56 @@
             }
         }
 
-
-        function navbar() {
-            const navbar = document.getElementById("navbar");
-            console.log(navbar)
-            if (navbar === true) {
-                document.getElementById("navbar").classList.add("search.png")
-            }
-            else {
-                document.getElementById("navbar").classList.remove("search.png")
-            }
-        }
-
-
         function switchDark() {
             const swicth = document.documentElement.classList.toggle('dark');
-            console.log(swicth)
             if (swicth === true) {
-                document.getElementById("iconDark").classList.add("bxs-ghost")
-                document.getElementById("iconDark").classList.remove("bx-ghost")
+                document.getElementById("iconDark").classList.replace('bxs-ghost', 'bxs-ghost');
             } else {
-                document.getElementById("iconDark").classList.add("bx-ghost")
-                document.getElementById("iconDark").classList.remove("bxs-ghost")
+                document.getElementById("iconDark").classList.replace('bxs-ghost', 'bxs-ghost');
             }
         }
+
+        function addItem() {
+            const list = document.getElementById("list");
+            const item = document.createElement("li");
+            item.textContent = "New item";
+            item.classList.add("border-b", "border-gray-400", "hover:bg-gray-100", "p-2", "dark:hover:bg-df2");
+            list.appendChild(item);
+        }
+
+        //  search input
+        const searchInput = document.getElementById("search");
+        searchInput.addEventListener("focus", function () {
+            searchInput.parentElement.classList.add("w-64");
+        });
+
+        searchInput.addEventListener("blur", function () {
+            searchInput.parentElement.classList.remove("w-64");
+        });
+
+        // tooltip
+        tippy('[data-tippy-content]', {
+            content: 'Some useful tooltip information.',
+            delay: 100,
+            duration: 200,
+        });
+
+        // pagination
+        document.querySelector('.pagination').addEventListener('click', function (e) {
+            if (e.target.classList.contains('active')) return;
+            const pageNumber = e.target.dataset.page;
+            const activePage = document.querySelector('.active');
+            activePage.classList.remove('active');
+            e.target.classList.add('active');
+            const items = document.querySelectorAll('.pagination-item');
+            const activePageIndex = Array.from(items).indexOf(activePage);
+            const currentPageIndex = Array.from(items).indexOf(e.target);
+            const offset = -(currentPageIndex - activePageIndex) * 25;
+            const list = document.querySelector('.list');
+            list.style.transform = `translateY(${offset}px)`;
+        });
     </script>
+
 </body>
 
 </html>
