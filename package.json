@@ -1,8 +1,8 @@
 {
+  "private": true,
   "devDependencies": {
     "tailwindcss": "^3.4.1"
   },
-
   "name": "companyprofile",
   "version": "1.0.0",
   "main": "tailwind.config.js",
