@@ -21,6 +21,8 @@ module.exports = {
         b2:"#273242",
         b3:"#B22222",
         b4:"#A4B5B8",
+        // warna buat yang di Account 
+        b5:"#F5F5F5",
       },  
       backgroundImage:{
         bgl:"url('../img/cp-bg.png')",
@@ -32,7 +34,9 @@ module.exports = {
 
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
   darkMode:'class'
 }
 

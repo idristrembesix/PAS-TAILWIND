@@ -14,7 +14,7 @@
 
 </head>
 <body class="bg-TX01 dark:bg-TX9" data-aos-easing="ease-in-out" data-aos-duration="1000" >
-    <header id="topHeader" class="fixed z-50 right-0 left-0 top-0 transition-all dark:bg-b1 bg-b4 w-full flex flex-row">
+    <header id="topHeader" class=" z-50 right-0 left-0 top-0 transition-all dark:bg-b1 bg-b4 w-full flex flex-row">
         <div class="flex justify-between items-center gap-10 py-6 w-4/5 m-auto flex-wrap">
             <img src="assets/img2/1714360372884aehj5tnf-removebg-preview.png" class="md:h-32 h-20" alt="">
             <p class="text-3xl font-bold flex-[1.5] text-white ">XSHOP</p>
@@ -26,16 +26,16 @@
                 <nav>
                     <ul class="flex flex-col md:flex-row gap-8 capitalize py-">
                         <li><a href="home.html" class="text-lg font-bold text-grey-600 text-white hover:text-black">Home</a></li>
-                        <li><a href="" class="text-lg font-bold text-grey-600 text-white hover:text-black">Shop</a></li>
-                        <li><a href="" class="text-lg font-bold text-grey-600 text-white hover:text-black">About</a></li>
-                        <li><a href="" class="text-lg font-bold text-grey-600 text-white hover:text-black">Blogs</a></li>
+                        <li><a href="shop.html" class="text-lg font-bold text-grey-600 text-white hover:text-black">Shop</a></li>
+                        <li><a href="about.html" class="text-lg font-bold text-grey-600 text-white hover:text-black">About</a></li>
+                        <li><a href="blog.html" class="text-lg font-bold text-grey-600 text-white hover:text-black">Blogs</a></li>
                         <div class="relative inline-block text-left">
                             <button id="menu-button" class="text-lg font-bold text-white dark:text-white focus:outline-none focus:ring focus:ring-opacity-50 lg:w-auto w-full">
                                 More <i class='bx bx-chevron-down'></i>
                             </button>
                             <div id="dropdown-menu" class="absolute right-0 hidden mt-2 bg-white  dark:bg-gray-800 rounded-md shadow-lg z-50" style="width: 150%; max-width: 18rem;">
                                 <a href="trendingHome.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Tranding home</a>
-                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">cart</a>
+                                <a href="shopdetail.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">shop detail</a>
                                 <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">account</a>
                             </div>
                         </div>
@@ -53,20 +53,19 @@
                         </script>
                     </ul>
                 </nav>
-                <a href="">
-                    <img
-                        src="assets/img2/basket.png" alt="" class="pt-7 md:pt-0 ">
+                <a href=""><img src="assets/img2/cp-icon-user.png" alt="" class="pt-7 md:pt-0 md:ml-36">
                 </a>
-                <img src="assets/img2/cp-icon-user.png" alt="" class="pt-7 md:pt-0 ">
                 <button
                     class="bg-f3 hover:ring hover:ring-sky-900 rounded-xl transition-all font-bold py-2 px-6 duration-200 shadow-md md:shadow-lg md:mt-0 mt-5 md:w-32 w-full md:bg-white bg-white">sign
             </div>
     </header>
-        
+    <div class="p-1 rounded-full fixed bottom-4 left-4 z-2 bg-df2 dark:bg-white ring bg-white" onclick="switchDark()">
+        <i id="iconDark" class="bx bxs-ghost text-4xl text-b1"></i>
+    </div>
   
         <section class="w-full h-full">
-            <h1 class="text-4xl text-black font-bold text-center mt-48 dark:text-white">Trending home</h1>
-           <div id="conten1" class="mt-10 md:mt-36 mx-4 md:mx-0 md:ml-52">
+            <h1 class="text-4xl text-black font-bold text-center mt-44 dark:text-white">Trending home</h1>
+           <div id="conten1" class="mt-10 md:mt-10 mx-4 md:mx-0 md:ml-52">
             <div class="w-full md:w-[80rem] h-[26rem] bg-black justify-center items-center rounded-xl dark:bg-TX10 mt-10 ">
                 <div class="px-4 md:px-80 py-5 md:py-10">
                    <p class="text-lg md:text-xl text-white font-semibold">30% off</p>

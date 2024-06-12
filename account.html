@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account</title>
+    <title style="background-image: url(assets/img2/1714360372884aehj5tnf-removebg-preview.png);">Account</title>
     <link rel="stylesheet" href="assets/css/output.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css">
@@ -20,124 +20,236 @@
     <!-- navbar -->
     <header id="topHeader" class="fixed z-2 right-0 left-0 transition-all dark:bg-b1 bg-b4 w-full flex flex-row">
         <div class="flex justify-between items-center gap-10 py-6 w-4/5 m-auto flex-wrap">
+            <img src="assets/img2/1714360372884aehj5tnf-removebg-preview.png" class="md:h-32 h-20" alt="">
             <p class="text-3xl font-bold flex-[1.5] text-white ">Exclusive</p>
             <div class="md:hidden block" onclick="showHideMenu()">
-                <i class="bx bx-menu text-4xl"></i>
+                <i class="bx bx-menu text-3xl"></i>
             </div>
             <div id="menu"
                 class="hidden md:flex flex-col md:flex-row basis-auto grow justify-between items-start md:items-center gap-5 md:gap-0">
                 <nav>
                     <ul class="flex flex-col md:flex-row gap-8 capitalize py-">
-                        <li><a href="" class="text-lg font-bold text-grey-600  text-white">Home</a></li>
-                        <li><a href="" class="text-lg font-bold text-grey-600  text-white">Contact</a></li>
-                        <li><a href="" class="text-lg font-bold text-grey-600   text-white">About</a></li>
-                        <li><a href="" class="text-lg font-bold text-grey-600   text-white">Sign up</a></li>
+                        <li><a href="http://127.0.0.1:5501/home.html"
+                                class="text-lg font-bold text-grey-600 text-white hover:text-black hover:font-semibold">Home</a>
+                        </li>
+                        <li><a href=""
+                                class="text-lg font-bold text-grey-600 text-white hover:text-black hover:font-semibold">Shop</a>
+                        </li>
+                        <li><a href=""
+                                class="text-lg font-bold text-grey-600 text-white hover:text-black hover:font-semibold">About</a>
+                        </li>
+                        <li><a href=""
+                                class="text-lg font-bold text-grey-600 text-white hover:text-black hover:font-semibold">Blogs</a>
+                        </li>
                     </ul>
                 </nav>
-                <!-- <div class="bg-white rounded-xl" id="navbar">
-                    <input type="search" name="" id="" class="rounded-xl text-center text-sm text-black bg-white outline-white outline " placeholder="Search in here" >
-                </div> -->
-                <div class="w-[300px] p-4 bg-white rounded-md flex gap-4">
-                    <input type="text" class="border-none">
-                    <div class="">
-                        <i class="bx bx-search"></i>
-                    </div>
+                <div class="relative w-max mx-auto">
+                    <input type="search" name="search" placeholder="search here" id="search"
+                        class="rounded-xl text-sm py-2 px-4 text-center  ">
                 </div>
-                <a href="">
-                    <img
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAnhJREFUWEftlztoVUEQhr8EtUgRBCMIapAYiSg2ioIighYSJCAEFCSVFr6xs/ARiCSQYKGgKGhhUklQFCwsEkgwhSAKaaKo4AMLH2iniKJiPD/MkfXm3nPO7jkxt8h09975Z787szuzW0OVWU2V8TALlFaR0gx1OYJvwCjwKC1Ikb+XAk2WCd4P7Cty0aRYWYCk3wMM/g+opJKtA9oM4j6weSaA3DUXAW+BWvtyDfB4uqHSjv0NYJdBXAKOzjTQFmDMID4D5wsG+goMAJ/iuGkZkp/KtLpgEDec2soGH6BDwOVpBHoTZWmZD1Ad8B6oN9FtYCIn4F6g0WL0Aid9gOR70dnQN4HdOYDmAx+BuRajCXjtC7QceGGiX8BS4EMg1GFAJ1b2ANjoxsmyqWP/EWCbfdDMOxMI9BBYb9qDwJVQoHbglomVncXAb0+olcBT03wHGgAd/b/mkyF1bHVudXCZ9pH2k4+djQCOm0CzUTPyH/MBkvA00G0R7kVNc6sHjf6QMrvQNK3R/hnKC7TAgs6xQM3Ay4xQO6K9c9d83wFLgCnXHd8MKd51J9VqmEcyArlzsQ84UU4XArQJ0HVE9iVqmOcyAp0C4syucNpIrj0Ui58AqzKClLpN6T2uQ0iGpNfpUOlCrCNJGwoUQ7V4EmkGxr2srDQPkCdLNvc8QGr5mtqvgGPAcIUltwMXAA1RvWAOJKGFAgnkmhP4efQq0VgoZ88At7R6Ugms0JK5HVuBfwLzKqzxw7lqyKUzOv49RQPpBTLu9JWrCaVQafcbgK4ua5MueKElU3xB7bSBW7EEBqIS63ZwJ+22mQco27Hx9JoFSktY1WXoD2FUXiVH8oH5AAAAAElFTkSuQmCC" />
-                </a>
-                <img src="dist/img2/cp-icon-user.png" alt="">
-                <button
-                    class="bg-f3 hover:ring hover:ring-sky-900 rounded-xl transition-all font-bold py-2 px-6 duration-200 shadow-md md:shadow-lg md:mt-0 mt-5 md:w-32 w-full md:bg-white bg-white">sign
-            </div>
     </header>
-
+    <!-- navbar -->
     <!-- section 1 -->
-    <section style="padding-top: 140px; padding-left: 40px;">
-        <div >
-            <p>
-                <span class="hover:font-bold font-light"><button>home</button></span>
-                <span>/</span>
-                <span class="hover:font-bold font-light"><button>My Account</button></span>
-            </p>
-        </div>
-        <div>
-            <p class="text-end" style="padding-right: 40px ;">
-                <span>Welcome !</span> 
-                <span class="text-red-400">Md rimel</span>
-            </p>
+    <section class="pt-20 pb-10" style="padding-top: 200px;">
+        <div class="container mx-auto p-4">
+            <div class="flex">
+                <p>
+                    <span class="hover:font-semibold dark:text-white"><button>Home</button></span>
+                    <span class=" dark:text-white">/</span>
+                    <span class="hover:font-semibold  dark:text-white"><button>My account</button></span>
+                </p>
+                <p class="text-center" style="padding-left: 1200px;">
+                    <span class="text-black dark:text-white">welcome! <span class="text-red-400">md rimel</span></span>
+                </p>
+            </div>
+            <div class="flex">
+                <div class="w-1/3">
+                    <p class="py-16 flex flex-col">
+                        <span class="font-bold text-xl dark:text-white">Manage my account</span>
+                        <span class="font-semibold pt-10"><button
+                                class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">My
+                                Profile </button></span>
+                        <span class="font-semibold pt-5"><button
+                                class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">Address
+                                Book</button></span>
+                        <span class="font-semibold pt-5"><button
+                                class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">My
+                                Payment Options</button></span>
+                    </p>
+                </div>
+                <div class="w-2/3">
+                    <main class="px-4 py-16">
+                        <section class="mb-16">
+                            <h2 class="text-4xl font-bold mb-4 dark:text-white">My Account</h2>
+                            <div class="bg-white p-8 shadow rounded">
+                                <form>
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div>
+                                            <label for="first_name" class="block text-lg font-bold mb-2">First
+                                                Name</label>
+                                            <input type="text" id="first_name" name="first_name" value="Md"
+                                                class="w-full border p-2">
+                                        </div>
+                                        <div>
+                                            <label for="last_name" class="block text-lg font-bold mb-2">Last
+                                                Name</label>
+                                            <input type="text" id="last_name" name="last_name" value="Rimel"
+                                                class="w-full border p-2">
+                                        </div>
+                                    </div>
+                                    <div class="mt-4">
+                                        <label for="email" class="block text-lg font-bold mb-2">Email</label>
+                                        <input type="email" id="email" name="email" value="rimell@gmail.com"
+                                            class="w-full border p-2">
+                                    </div>
+                                    <div class="mt-4">
+                                        <label for="address" class="block text-lg font-bold mb-2">Address</label>
+                                        <input type="text" id="address" name="address"
+                                            value="Kingston, 5236, United State" class="w-full border p-2">
+                                    </div>
+                                    <div class="mt-4 grid grid-cols-2 gap-4">
+                                        <div>
+                                            <label for="current_password" class="block text-lg font-bold mb-2">Current
+                                                Password</label>
+                                            <input type="password" id="current_password" name="current_password"
+                                                class="w-full border p-2">
+                                        </div>
+                                        <div>
+                                            <label for="new_password" class="block text-lg font-bold mb-2">Confirm
+                                                Password</label>
+                                            <input type="password" id="new_password" name="new_password"
+                                                class="w-full border p-2">
+                                        </div>
+                                    </div>
+                                    <div class="mt-4">
+                                        <label for="confirm_new_password" class="block text-lg font-bold mb-2">New
+                                            Password</label>
+                                        <input type="password" id="confirm_new_password" name="confirm_new_password"
+                                            class="w-full border p-2">
+                                    </div>
+                                    <div class="mt-8 text-center">
+                                        <button type="submit"
+                                            class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">Cancel</button>
+                                        <button type="submit"
+                                            class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Save
+                                            Changes</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </section>
+                    </main>
+                </div>
+            </div>
         </div>
     </section>
+    <!-- footer -->
+        <div class="bg-black rounded-t-3xl flex flex-row" style="padding-top: 100px; padding-bottom: 80px;">
+            <div>
+                <p class="text-white flex flex-col" style="padding-left: 70px;">
+                    <span class="text-start items-start text-3xl font-semibold" style="">Exclusive</span>
+                    <span class="text-start items-start text-xl font-semibold" style=" padding-top: 15px;">Subscribe</span>
+                    <span class="text-start items-start text-lg font-light" style=" padding-top: 15px;">Get 10% off your first order</span>
+                </p>
+            </div>
+            <div>
+                <p class="text-white flex flex-col" style="padding-left: 70px;">
+                    <span class="text-start items-start text-3xl font-semibold" style="">Support</span>
+                    <span class="text-start items-start text-xl font-light" style=" padding-top: 15px;">111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.</span>
+                    <span class="text-start items-start text-lg font-light" style=" padding-top: 15px;">exclusive@gmail.com</span>
+                    <span class="text-start items-start text-lg font-light" style=" padding-top: 15px;">+88015-88888-9999</span>
+                </p>
+            </div>
+        
+        </div>
+        <section class="bg-black flex text-center justify-center " style="padding-bottom: 50px;">
+            <p class="text-slate-500 dark:text-white">Made With Loving By IDRISJR All Rttight Reserved</p>
+        </section>
 
     <!-- javascript -->
     <div class="p-1 rounded-full fixed bottom-4 left-4 z-2 bg-df2 dark:bg-white ring bg-white" onclick="switchDark()">
         <i id="iconDark" class="bx bxs-ghost text-4xl text-b1"></i>
     </div>
 
-        <script>
-            var xstatus = false;
-            window.onscroll = function () { menu() };
-            function menu() {
-                if (document.documentElement.scrollTop > 20) {
-                    document.getElementById("topHeader").classList.add("bg-white");
+    <script>
+        // pop up
+        document.getElementById("openPopup").addEventListener("click", function () {
+            document.getElementById("popup").style.display = "block";
+        });
+
+        document.getElementById("closePopup").addEventListener("click", function () {
+            document.getElementById("popup").style.display = "none";
+        });
+
+        var xstatus = false;
+
+        function showHideMenu() {
+            if (!xstatus) {
+                document.getElementById("menu").classList.remove("hidden");
+                document.getElementById("menu").classList.add("flex");
+                if (document.documentElement.scrollTop < 60) {
+                    document.getElementById("topHeader").classList.add("shadow-lg");
+                }
+                xstatus = true;
+            } else {
+                document.getElementById("menu").classList.remove("flex");
+                document.getElementById("menu").classList.add("hidden");
+                if (document.documentElement.scrollTop < 60) {
                     document.getElementById("topHeader").classList.remove("shadow-lg");
-                } else {
-                    if (!xstatus && document.documentElement.scrollTop < 20) {
-                        document.getElementById("topHeader").classList.remove("bg-white");
-                        document.getElementById("topHeader").classList.remove("shadow-lg");
-
-                    }
                 }
-            };
-
-            var xstatus = false;
-            function showHideMenu() {
-                if (!xstatus) {
-                    document.getElementById("menu").classList.remove("hidden");
-                    document.getElementById("menu").classList.add("flex");
-                    document.getElementById("topHeader").classList.add("bg-white");
-                    if (document.documentElement.scrollTop < 20) {
-                        document.getElementById("topHeader").classList.add("bg-white");
-                        document.getElementById("topHeader").classList.add("shadow-lg");
-                    }
-                    xstatus = true;
-                } else {
-                    document.getElementById("menu").classList.remove("flex");
-                    document.getElementById("menu").classList.add("hidden");
-                    if (document.documentElement.scrollTop < 20) {
-                        document.getElementById("topHeader").classList.remove("bg-white");
-                        document.getElementById("topHeader").classList.remove("shadow-lg");
-                    }
-                    xstatus = false;
-                }
-            }
-
-            // darkmode
-        function switchDark(){
-           const swicth = document.documentElement.classList.toggle('dark');
-           console.log(swicth)
-           if(swicth === true ) {
-            document.getElementById("iconDark").classList.add("bxs-ghost")
-            document.getElementById("iconDark"  ).classList.remove("bx-ghost")
-           } else {
-            document.getElementById("iconDark").classList.add("bx-ghost")
-            document.getElementById("iconDark").classList.remove("bxs-ghost")
-           }
-        }
-
-        function navbar(){
-            const navbar = document.getElementById("navbar");
-            console.log(navbar)
-            if(navbar === true){
-                document.getElementById("navbar").classList.add("search.png")
-            }
-            else{
-                document.getElementById("navbar").classList.remove("search.png")
+                xstatus = false;
             }
         }
 
-    </script> 
+        function switchDark() {
+            const swicth = document.documentElement.classList.toggle('dark');
+            if (swicth === true) {
+                document.getElementById("iconDark").classList.replace('bxs-ghost', 'bxs-ghost');
+            } else {
+                document.getElementById("iconDark").classList.replace('bxs-ghost', 'bxs-ghost');
+            }
+        }
+
+        function addItem() {
+            const list = document.getElementById("list");
+            const item = document.createElement("li");
+            item.textContent = "New item";
+            item.classList.add("border-b", "border-gray-400", "hover:bg-gray-100", "p-2", "dark:hover:bg-df2");
+            list.appendChild(item);
+        }
+
+        //  search input
+        const searchInput = document.getElementById("search");
+        searchInput.addEventListener("focus", function () {
+            searchInput.parentElement.classList.add("w-64");
+        });
+
+        searchInput.addEventListener("blur", function () {
+            searchInput.parentElement.classList.remove("w-64");
+        });
+
+        // tooltip
+        tippy('[data-tippy-content]', {
+            content: 'Some useful tooltip information.',
+            delay: 100,
+            duration: 200,
+        });
+
+        // pagination
+        document.querySelector('.pagination').addEventListener('click', function (e) {
+            if (e.target.classList.contains('active')) return;
+            const pageNumber = e.target.dataset.page;
+            const activePage = document.querySelector('.active');
+            activePage.classList.remove('active');
+            e.target.classList.add('active');
+            const items = document.querySelectorAll('.pagination-item');
+            const activePageIndex = Array.from(items).indexOf(activePage);
+            const currentPageIndex = Array.from(items).indexOf(e.target);
+            const offset = -(currentPageIndex - activePageIndex) * 25;
+            const list = document.querySelector('.list');
+            list.style.transform = `translateY(${offset}px)`;
+        });
+    </script>
+
 </body>
 
 </html>

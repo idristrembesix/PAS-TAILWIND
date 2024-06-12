@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XSHOP</title>
+    <link rel="stylesheet" href="assets/css/output.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+</head>
+<body class="bg-TX01 dark:bg-TX9">
+    <header id="topHeader" class=" z-50 right-0 left-0 top-0 transition-all dark:bg-b1 bg-b4 w-full flex flex-row">
+        <div class="flex justify-between items-center gap-10 py-6 w-4/5 m-auto flex-wrap">
+            <img src="assets/img2/1714360372884aehj5tnf-removebg-preview.png" class="md:h-32 h-20" alt="">
+            <p class="text-3xl font-bold flex-[1.5] text-white ">XSHOP</p>
+            <div class="md:hidden block" onclick="showHideMenu()">
+                <i class="bx bx-menu text-4xl"></i>
+            </div>
+            <div id="menu"
+                class="hidden md:flex flex-col md:flex-row basis-auto grow justify-between items-start md:items-center gap-5 md:gap-0">
+                <nav>
+                    <ul class="flex flex-col md:flex-row gap-8 capitalize py-">
+                        <li><a href="home.html" class="text-lg font-bold text-grey-600 text-white hover:text-black">Home</a></li>
+                        <li><a href="shop.html" class="text-lg font-bold text-grey-600 text-white hover:text-black">Shop</a></li>
+                        <li><a href="about.html" class="text-lg font-bold text-grey-600 text-white hover:text-black">About</a></li>
+                        <li><a href="blog.html" class="text-lg font-bold text-grey-600 text-white hover:text-black">Blogs</a></li>
+                        <div class="relative inline-block text-left">
+                            <button id="menu-button" class="text-lg font-bold text-white dark:text-white focus:outline-none focus:ring focus:ring-opacity-50 lg:w-auto w-full">
+                                More <i class='bx bx-chevron-down'></i>
+                            </button>
+                            <div id="dropdown-menu" class="absolute right-0 hidden mt-2 bg-white  dark:bg-gray-800 rounded-md shadow-lg z-50" style="width: 150%; max-width: 18rem;">
+                                <a href="trendingHome.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Tranding home</a>
+                                <a href="shopdetail.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">shop detail</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">account</a>
+                            </div>
+                        </div>
+                        <script>
+                            document.getElementById('menu-button').addEventListener('click', function() {
+                                var dropdown = document.getElementById('dropdown-menu');
+                                if (dropdown.classList.contains('hidden')) {
+                                    dropdown.classList.remove('hidden');
+                                    dropdown.classList.add('block');
+                                } else {
+                                    dropdown.classList.add('hidden');
+                                    dropdown.classList.remove('block');
+                                }
+                            });
+                        </script>
+                    </ul>
+                </nav>
+                <a href=""><img src="assets/img2/cp-icon-user.png" alt="" class="pt-7 md:pt-0 md:ml-36">
+                </a>
+                <button
+                    class="bg-f3 hover:ring hover:ring-sky-900 rounded-xl transition-all font-bold py-2 px-6 duration-200 shadow-md md:shadow-lg md:mt-0 mt-5 md:w-32 w-full md:bg-white bg-white">sign
+            </div>
+    </header>
+    
+        <div class="p-1 rounded-full fixed bottom-4 left-4 z-2 bg-df2 dark:bg-white ring bg-white" onclick="switchDark()">
+            <i id="iconDark" class="bx bxs-ghost text-4xl text-b1"></i>
+        </div>
+        <main class="container mx-auto py-8 px-6">
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="assets/img/blog1.png" alt="Post Image" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Post Title 1</h3>
+                        <p class="text-gray-600">The famous brand has released its latest collection of men's shirts which is ready to amaze fashion fans. This shirt comes with an elegant design and a charming dark green color. With short sleeves and a fitted cut, this shirt is suitable for wearing on various occasions, both formal and casual.</p>
+                        <button class="mt-4 bg-black text-white py-2 px-4 rounded">Read More</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="assets/img/blog2.png" alt="Post Image" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Post Title 2</h3>
+                        <p class="text-gray-600"> Made from high-quality cotton, this t-shirt offers maximum comfort and exceptional durability. The classic round collar cut makes it easy to combine with various styles, both casual and semi-formal. This t-shirt is available in various sizes and can be found at official outlets and online platforms at very affordable prices.</p>
+                        <button class="mt-4 bg-black text-white py-2 px-4 rounded">Read More</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="assets/img/blog3.png" alt="Post Image" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Post Title 3</h3>
+                        <p class="text-gray-600">The latest t-shirt from this brand comes in a charming dark green color, giving a stylish and versatile impression for various occasions. With short sleeves and a fitted cut, this t-shirt is very suitable for everyday wear or casual events with friends and family.</p>
+                        <button class="mt-4 bg-black text-white py-2 px-4 rounded">Read More</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="assets/img/blog4.png" alt="Post Image" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Post Title 4</h3>
+                        <p class="text-gray-600">Not to be left behind, this brand also released a men's jacket which is no less interesting. With the same dark green color, this jacket offers warmth and comfort, especially for cold weather. The modern and stylish design makes this jacket the perfect choice for a trendy casual look.</p>
+                        <button class="mt-4 bg-black text-white py-2 px-4 rounded">Read More</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="assets/img/blog6.png" alt="Post Image" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Post Title 5</h3>
+                        <p class="text-gray-600">The model looks comfortable and confident thanks to the high-quality cotton material used, providing maximum comfort and exceptional durability. The classic round collar cut makes it easy to combine with various styles, both casual and semi-formal. This t-shirt is available in various sizes and can be found at official outlets and online platforms at very affordable prices.</p>
+                        <button class="mt-4 bg-black text-white py-2 px-4 rounded">Read More</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="assets/img/blog7.png" alt="Post Image" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Post Title 6</h3>
+                        <p class="text-gray-600">Made from high-quality cotton, this t-shirt offers maximum comfort and exceptional durability. The classic round collar cut makes it easy to combine with various styles, both casual and semi-formal. This t-shirt is available in various sizes and can be found at official outlets and online platforms at very affordable prices.</p>
+                        <button class="mt-4 bg-black text-white py-2 px-4 rounded">Read More</button>
+                    </div>
+                </div>
+            </section>
+            <aside class="mt-8 bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="assets/img/kaos2.png" alt="Featured Post Image" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">About this brand</h3>
+                    <p class="text-gray-600">New Fitted coming ready</p>
+                    <h4 class="text-xl font-semibold">T-Shirt grey the modern now</h4>
+                    <p class="text-red-500 line-through">Rp 100.000</p>
+                    <p class="text-green-500">+10.000</p>
+                    <button class="mt-4 bg-black text-white py-2 px-4 rounded">Detail</button>
+                </div>
+            </aside>
+        </main>  
+        </body>
+        </html>
