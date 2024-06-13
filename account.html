@@ -11,42 +11,59 @@
     <link rel="stylesheet" href="OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="assets/img sign/lambang.png">
+
 
 
 
 </head>
-
+    
 <body class="bg-b4 dark:bg-b1 ">
     <!-- navbar -->
-    <header id="topHeader" class="z-2 right-0 left-0 transition-all dark:bg-b1 bg-b4 w-full flex flex-row">
+    <header id="topHeader" class=" z-50 right-0 left-0 top-0 transition-all dark:bg-b1 bg-b4 w-full flex flex-row">
         <div class="flex justify-between items-center gap-10 py-6 w-4/5 m-auto flex-wrap">
             <img src="assets/img2/1714360372884aehj5tnf-removebg-preview.png" class="md:h-32 h-20" alt="">
-            <p class="text-3xl font-bold flex-[1.5] text-white ">Exclusive</p>
+            <p class="text-3xl font-bold flex-[1.5] text-white ">XSHOP</p>
             <div class="md:hidden block" onclick="showHideMenu()">
-                <i class="bx bx-menu text-3xl"></i>
+                <i class="bx bx-menu text-4xl"></i>
             </div>
             <div id="menu"
                 class="hidden md:flex flex-col md:flex-row basis-auto grow justify-between items-start md:items-center gap-5 md:gap-0">
                 <nav>
                     <ul class="flex flex-col md:flex-row gap-8 capitalize py-">
-                        <li><a href="http://127.0.0.1:5501/home.html"
-                                class="text-lg font-bold text-grey-600 text-white hover:text-black hover:font-semibold">Home</a>
-                        </li>
-                        <li><a href=""
-                                class="text-lg font-bold text-grey-600 text-white hover:text-black hover:font-semibold">Shop</a>
-                        </li>
-                        <li><a href=""
-                                class="text-lg font-bold text-grey-600 text-white hover:text-black hover:font-semibold">About</a>
-                        </li>
-                        <li><a href=""
-                                class="text-lg font-bold text-grey-600 text-white hover:text-black hover:font-semibold">Blogs</a>
-                        </li>
+                        <li><a href="index.html" class="text-lg font-bold text-grey-600 text-white hover:text-black">Home</a></li>
+                        <li><a href="shop.html" class="text-lg font-bold text-grey-600 text-white hover:text-black">Shop</a></li>
+                        <li><a href="about.html" class="text-lg font-bold text-grey-600 text-white hover:text-black">About</a></li>
+                        <li><a href="blog.html" class="text-lg font-bold text-grey-600 text-white hover:text-black">Blogs</a></li>
+                        <div class="relative inline-block text-left">
+                            <button id="menu-button" class="text-lg font-bold text-white dark:text-white focus:outline-none focus:ring focus:ring-opacity-50 lg:w-auto w-full">
+                                More <i class='bx bx-chevron-down'></i>
+                            </button>
+                            <div id="dropdown-menu" class="absolute right-0 hidden mt-2 bg-white  dark:bg-gray-800 rounded-md shadow-lg z-50" style="width: 150%; max-width: 18rem;">
+                                <a href="Trending.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Tranding home</a>
+                                <a href="shopdetail.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">shop detail</a>
+                                <a href="account.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">account</a>
+                            </div>
+                        </div>
+                        <script>
+                            document.getElementById('menu-button').addEventListener('click', function() {
+                                var dropdown = document.getElementById('dropdown-menu');
+                                if (dropdown.classList.contains('hidden')) {
+                                    dropdown.classList.remove('hidden');
+                                    dropdown.classList.add('block');
+                                } else {
+                                    dropdown.classList.add('hidden');
+                                    dropdown.classList.remove('block');
+                                }
+                            });
+                        </script>
                     </ul>
                 </nav>
-                <div class="relative w-max mx-auto">
-                    <input type="search" name="search" placeholder="search here" id="search"
-                        class="rounded-xl text-sm py-2 px-4 text-center  ">
-                </div>
+                <a href="account.html"><img src="assets/img2/cp-icon-user.png" alt="" class="pt-7 md:pt-0 md:ml-36">
+                </a>
+               <a href="sign in.html"> <button
+                class="bg-f3 hover:ring hover:ring-sky-900 rounded-xl transition-all font-bold py-2 px-6 duration-200 shadow-md md:shadow-lg md:mt-0 mt-5 md:w-32 w-full md:bg-white bg-white">sign
+        </div></a>
     </header>
     <!-- navbar -->
     <!-- section 1 -->
